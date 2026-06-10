@@ -1,6 +1,6 @@
-# AI-llm-integration-starter (Gemini & Ollama)
+# AI-brochure-generator (Ollama & Gradio)
 
-This project is a practical, step-by-step guide inside a Jupyter Notebook that demonstrates how to connect and interact with Large Language Models (LLMs). The core focus is utilizing the standard OpenAI API structure to seamlessly switch between cloud-based providers (like Google Gemini) and local/open-source models (via Ollama).
+An intelligent and automated tool to convert company website content into professional business and promotional brochures using Large Language Models (LLMs).
 
 ## Key Features
 - Secure Environment Management: Utilizing .env files to prevent API key exposure.
@@ -9,17 +9,18 @@ This project is a practical, step-by-step guide inside a Jupyter Notebook that d
 
 ## Prerequisites
 To run this notebook, you will need:
-- Python 3.8 or higher
+- Python 3.11.3
 - Ollama installed and running (for the local model section)
+- **Smart Web Scraping:** Automatically crawls the website and gathers textual information.
+- **AI-Powered Filtering:** Selects the most relevant pages (e.g., About Us, Products, Investors) using an LLM.
+- **Structured Content Generation:** Creates well-structured and standard business brochures.
+- **Easy User Interface:** Features a simple web-based UI powered by Gradio.
 
 ## Getting Started
 - Clone the repository.
 - Create a .env file in the root directory of the project and configure the following environment variables:
 
 ```bash
-GEMINI_API_KEY=your_actual_gemini_api_key
-GEMINI_BASE_URL=[https://generativelanguage.googleapis.com/v1beta/openai/](https://generativelanguage.googleapis.com/v1beta/openai/)
-GEMINI_MODEL=gemini-1.5-flash
 OLLAMA_BASE_URL=http://localhost:11434/v1
 OLLAMA_MODEL=llama3
 ```
