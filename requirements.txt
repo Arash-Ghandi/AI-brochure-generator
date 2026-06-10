@@ -1,0 +1,9 @@
+ipykernel
+requests
+scipy
+beautifulsoup4
+ollama
+jupyterlab
+openai
+python-dotenv
+gradio
